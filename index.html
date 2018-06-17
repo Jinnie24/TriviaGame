@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body background="assets/images/digital_painting_3-wallpaper-1680x1050.jpg">
+    <div class="jumbotron">
+        <h1 class="text-center">Welcome to our new Trivia game!</h1>
+        <p class="text-center">You will have 1 minute to answer all the questions, the game will over if the player runs out of time or answer all questions. You will see new question as soon as you will answer the one that is alredy displayed.</p>            
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <br>
+                <button type="button" class="btn btn-warning" id="start">Start!</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center" id="result">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                    <div class="timer"></div>
+                    <br>
+            </div>
+        </div>
+
+        <div class="row" id="qurrentOutput">
+            <div class="col-md-12 text-center">
+                <p><span id="question-cur"></span></p>
+                <p><span id="choices-cur">
+                    <div class="form-check" id="MyForm">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1" id="textoption1">
+                          
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="option2">
+                        <label class="form-check-label" for="exampleRadios2" id="textoption2">
+                          
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="option3">
+                        <label class="form-check-label" for="exampleRadios2" id="textoption3">
+                          
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="option4">
+                        <label class="form-check-label" for="exampleRadios2" id="textoption4">  
+                        </label>
+                      </div>
+                </span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <button type="button" class="btn btn-warning" id="submit">Submit</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
